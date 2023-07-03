@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Card from '../components/Card.astro';
+
+// const posts = await Astro.glob('../posts/*.md');
+---
+<div>
+<Layout title="Astro Blog">
+  <Showcase heading="Got a question?" text="We'd love to hear from you." />
+  <section class="page-content">
+    <div class="container">
+
+      <h3>Contact us:</h3>
+        <Card>
+        <div>
+        <strong>  Phone: </strong> 000-111-1010<br>
+    </div><br>
+    <div>
+        <strong>  Email: </strong> support@finedge.com<br>
+    </div><br>
+    <div>
+        <strong>  Twitter: </strong> twitter.com/finedge<br>
+    </div>
+        </Card>
+     
+    </div>
+  </section>
+</Layout>
+</div>
